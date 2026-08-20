@@ -37,7 +37,7 @@
 | `img_id` | Identifier (`character varying 255`) | Associated lesion image filename | Image identifier / filename | Treated primarily as an identifier rather than an analytical variable |
 | `biopsed` | Boolean | Whether the lesion was biopsy-confirmed | `true` / `false` | Clinical-management characteristic |
 
-2. Diagnostic Code, Full Name and Classification
+## 2. Diagnostic Code, Full Name and Classification
 The source dataset records lesion diagnoses using abbreviated diagnostic codes. The project brief did not provide the corresponding full clinical names or broader classifications; these were therefore documented during the analytical stage using established dermatological terminology to support interpretability and category-level analysis. The original diagnostic codes remained unchanged in the data.
 | Code | Full Diagnostic Name | Classification |
 |---|---|---|
