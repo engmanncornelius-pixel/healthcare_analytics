@@ -31,6 +31,7 @@ Analytical dataset: The resulting dataset contains 1,088 linked records across s
 
 ## Key findings
 - Diagnosis and lesion category composition
+
 Pre-cancerous lesions were the most common lesion category, accounting for 461 (42.37%) of the 1,088 lesions. All pre-cancerous cases were ACK (actinic keratosis), making ACK the most frequently recorded individual diagnosis in the dataset.  Malignant lesions were for 346 (31.80%), while benign lesions were 281 (25.83%).
 
 - Clinical features by lesion category
