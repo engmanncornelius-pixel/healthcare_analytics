@@ -21,13 +21,13 @@ Analytical dataset: The resulting dataset contains 1,088 linked records across s
 ## Analytical Approach
 1. Data quality assessment and cleaning: The two source tables were inspected for structural and data quality issues, including duplicates, missing values, inconsistent categorical values, unexpected values and questionable numerical observations. Cleaning decisions were applied where the intended correction could be justified, while unresolved data quality issues were retained and documented rather than arbitrarily altered.
 
-2. Independent exploratory analysis: Patient and lesion tables were initially analysed separately to establish their underlying profiles. Patient analysis covered demographics, clinical history, lifestyle habits and environmental characteristics, while lesion analysis examined diagnoses, anatomical locations, clinical features, measurements and biopsy status.
+2. Independent exploratory analysis:  Patient and lesion tables were initially analysed separately to establish their underlying profiles. Patient analysis covered demographics, clinical history, lifestyle habits and environmental characteristics, while lesion analysis examined diagnoses, anatomical locations, clinical features, measurements and biopsy status.
 
 3. Dataset linkage and relationship analysis: The cleaned tables were linked through the common patient_id to create a unified analytical view. This enabled analysis of how patient and lesion characteristics varied across individual lesion diagnoses.
 
-4. Diagnostic classification: The six individual lesion diagnoses were grouped into three broader categories — benign, pre-cancerous and malignant — to support analysis aligned with the project's central interest in patterns associated with malignant versus benign lesions.
+4. Diagnostic classification:  The six individual lesion diagnoses were grouped into three broader categories — benign, pre-cancerous and malignant — to support analysis aligned with the project's central interest in patterns associated with malignant versus benign lesions.
 
-5. Category-level pattern analysis: The classified dataset was analysed to compare clinical features, anatomical locations, patient demographics, clinical history, lifestyle habits and environmental characteristics across the three lesion categories, with particular attention to characteristics showing notable differences between malignant and benign groups.
+5. Category-level pattern analysis:  The classified dataset was analysed to compare clinical features, anatomical locations, patient demographics, clinical history, lifestyle habits and environmental characteristics across the three lesion categories, with particular attention to characteristics showing notable differences between malignant and benign groups.
 
 ## Key findings
 - Diagnosis and lesion category composition
@@ -124,10 +124,11 @@ I used PostgreSQL to clean, transform, aggregate and analyse patient and lesion 
 4. Refer to the full project report for the complete analytical methodology, findings, interpretations, visualisations, data quality decisions and limitations.
 
 ## Supporting Documentation
-Document	Purpose
-Project Charter	Defines the healthcare problem, project objective, scope, analytical questions, stakeholder, deliverables, success criteria and limitations.
-Data Dictionary	Documents source variables, data types, coding, analytical notes, diagnostic code mappings and derived analytical objects.
-Full Project Report	Provides the complete methodology, analysis, findings, discussion, visualisations, limitations and recommendations.
-Executive Memo	Summarises the business problem, method, key findings, recommendations, limitations and next steps for a non-technical audience.
-Visualisation Workbook	Contains the supporting analytical outputs, chart-preparation tables and final project visualisations.
+| Document | Purpose |
+|---|---|
+| [**Project Charter**](documentation/project%20charter.md) | Defines the healthcare problem, project objective, scope, analytical questions, stakeholder, deliverables, success criteria and limitations. |
+| [**Data Dictionary**](documentation/data%20dictionary.md) | Documents source variables, data types, coding, analytical notes, diagnostic code mappings and derived analytical objects. |
+| [**Full Project Report**](documentation/full_project_report.pdf) | Provides the complete methodology, analysis, findings, discussion, visualisations, limitations and recommendations. |
+| [**Executive Memo**](documentation/executive%20memo.pdf) | Summarises the business problem, method, key findings, recommendations, limitations and next steps for a non-technical audience. |
+| [**Visualisation Workbook**](visuals/skin_lesion_visualisations.xlsx) | Contains the supporting analytical outputs, chart-preparation tables and final project visualisations. |
 
