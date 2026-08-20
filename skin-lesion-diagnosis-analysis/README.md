@@ -34,15 +34,19 @@ Analytical dataset: The resulting dataset contains 1,088 linked records across s
 Pre-cancerous lesions were the most common lesion category, accounting for 461 (42.37%) of the 1,088 lesions. All pre-cancerous cases were ACK (actinic keratosis), making ACK the most frequently recorded individual diagnosis in the dataset.  Malignant lesions were for 346 (31.80%), while benign lesions were 281 (25.83%).
 
 - Clinical features by lesion category
+
 Malignant lesions showed the broadest clinical feature profile. Elevation (82.66%), itching (75.14%) and growth (74.86%) were common, while bleeding (52.02%) and pain (36.99%) were substantially more prevalent among malignant lesions than benign lesions (1.42% and 1.78%, respectively). Pre-cancerous lesions were predominantly characterised by itching (75.92%), followed by elevation (26.46%) and growth (16.70%).
 
 - Anatomical distribution
+
 The face was a prominent lesion site across all three categories, ranking first among malignant (29.48%) and benign lesions (28.11%) and second among pre-cancerous lesions (21.04%). Pre-cancerous lesions showed a different anatomical pattern, occurring most frequently on the forearm (36.44%), while the back was the second most common site for benign lesions (21.00%) and the chest for malignant lesions (15.03%).
 
 - Demographic Patterns
+
 Malignant and pre-cancerous lesions were concentrated among older patients. Among patients with malignant lesions, 89.88% were aged 46 years or above, compared with 86.11% of patients with pre-cancerous lesions. In contrast, benign lesions were distributed more broadly across every age group, including younger age groups. The combined age and gender analysis also showed substantial male representation across the major age groups, particularly among pre-cancerous lesions.
 
 - Clinical history
+
 Clinical history showed a pronounced difference across lesion categories. Among patients with malignant lesions, 54.05% had a family history of cancer and 45.38% had a previous skin cancer diagnosis. These characteristics were considerably less prevalent among patients with pre-cancerous lesions (14.53% and 11.71%, respectively) and benign lesions (6.41% and 4.63%, respectively).
 
  ### Overall Synthesis
