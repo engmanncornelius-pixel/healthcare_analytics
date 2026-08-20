@@ -16,7 +16,7 @@ Structure: Each table contained 1,088 records. The patient table contained one r
 Patient table (`table1`): Contains demographic information, clinical history, lifestyle habits and environmental characteristics.
 Lesion table (`table2`): Contains lesion diagnoses, anatomical locations, clinical features, lesion measurements, biopsy status and associated image identifiers.
 Linkage: The tables were linked using the common `patient_id`, creating a unified analytical view containing both patient and lesion information.
-Analytical dataset: The resulting dataset contains 1,088 linked records across six lesion diagnoses: ACK, BCC, MEL, NEV, SCC and SEK. For category-level analysis, these diagnoses were subsequently classified as benign, pre-cancerous or malignant.
+Analytical dataset: The resulting dataset contains 1,088 linked records across six lesion diagnoses: `ACK`, `BCC`, `MEL`, `NEV`, `SCC` and `SEK`. For category-level analysis, these diagnoses were subsequently classified as benign, pre-cancerous or malignant.
 
 ## Analytical Approach
 1. Data quality assessment and cleaning: The two source tables were inspected for structural and data quality issues, including duplicates, missing values, inconsistent categorical values, unexpected values and questionable numerical observations. Cleaning decisions were applied where the intended correction could be justified, while unresolved data quality issues were retained and documented rather than arbitrarily altered.
