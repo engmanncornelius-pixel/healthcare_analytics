@@ -117,7 +117,7 @@ I used PostgreSQL to clean, transform, aggregate and analyse patient and lesion 
 ## Reproducing the Analysis
 1. Set up a PostgreSQL database and import the raw source dataset.
 2. Run the SQL scripts sequentially:
-- `[01_data_quality_assessment.sql] (https://github.com/engmanncornelius-pixel/healthcare_analytics/blob/58eaddebd3d92175c76b82517aea1f8624b9bccc/skin-lesion-diagnosis-analysis/sql_scripts/01_data_quality_assessment.sql)` (Data Quality Assessment): It profiles the raw data and assesses data quality, including completeness, duplicates, categorical consistency, value ranges and other potential issues.
+- [`01_data_quality_assessment.sql`] (https://github.com/engmanncornelius-pixel/healthcare_analytics/blob/58eaddebd3d92175c76b82517aea1f8624b9bccc/skin-lesion-diagnosis-analysis/sql_scripts/01_data_quality_assessment.sql) (Data Quality Assessment): It profiles the raw data and assesses data quality, including completeness, duplicates, categorical consistency, value ranges and other potential issues.
 - `02_exploratory_analysis.sql` (Data Cleaning, Transformation & Exploratory Analysis): It applies justified cleaning and transformation decisions, creates and validates the cleaned tables, conducts the exploratory analysis, and creates the unified analytical view for diagnosis-level analysis.
 - `03_lesion_category_analysis.sql` (Lesion Classification Analysis): It creates the classified analytical view and examines patterns across benign, pre-cancerous and malignant lesion categories.
 3. Review the Data Dictionary for source variable definitions, data types and coding, diagnostic code mappings, analytical notes and derived analytical objects.
