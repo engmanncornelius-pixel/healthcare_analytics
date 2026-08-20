@@ -23,7 +23,7 @@ Analytical dataset: The resulting dataset contains 1,088 linked records across s
 
 2. Independent exploratory analysis:  Patient and lesion tables were initially analysed separately to establish their underlying profiles. Patient analysis covered demographics, clinical history, lifestyle habits and environmental characteristics, while lesion analysis examined diagnoses, anatomical locations, clinical features, measurements and biopsy status.
 
-3. Dataset linkage and relationship analysis: The cleaned tables were linked through the common patient_id to create a unified analytical view. This enabled analysis of how patient and lesion characteristics varied across individual lesion diagnoses.
+3. Dataset linkage and relationship analysis: The cleaned tables were linked through the common `patient_id` to create a unified analytical view. This enabled analysis of how patient and lesion characteristics varied across individual lesion diagnoses.
 
 4. Diagnostic classification:  The six individual lesion diagnoses were grouped into three broader categories — benign, pre-cancerous and malignant — to support analysis aligned with the project's central interest in patterns associated with malignant versus benign lesions.
 
