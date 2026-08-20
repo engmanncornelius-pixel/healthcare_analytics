@@ -126,7 +126,7 @@ I used PostgreSQL to clean, transform, aggregate and analyse patient and lesion 
 ## Supporting Documentation
 | Document | Purpose |
 |---|---|
-| [**Project Charter**](documentation/project%20charter.md) | Defines the healthcare problem, project objective, scope, analytical questions, stakeholder, deliverables, success criteria and limitations. |
+| [**Project Charter**](https://github.com/engmanncornelius-pixel/healthcare_analytics/blob/main/skin-lesion-diagnosis-analysis/documentation/project_charter.md) | Defines the healthcare problem, project objective, scope, analytical questions, stakeholder, deliverables, success criteria and limitations. |
 | [**Data Dictionary**](documentation/data%20dictionary.md) | Documents source variables, data types, coding, analytical notes, diagnostic code mappings and derived analytical objects. |
 | [**Full Project Report**](documentation/full_project_report.pdf) | Provides the complete methodology, analysis, findings, discussion, visualisations, limitations and recommendations. |
 | [**Executive Memo**](documentation/executive%20memo.pdf) | Summarises the business problem, method, key findings, recommendations, limitations and next steps for a non-technical audience. |
