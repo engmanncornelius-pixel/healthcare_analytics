@@ -103,8 +103,8 @@ skin-lesion-diagnosis-sql-analysis/
 I used PostgreSQL to clean, transform, aggregate and analyse patient and lesion data.
 - Data profiling and validation: I assessed completeness, duplicates, categorical consistency, value ranges and data type suitability across two related datasets.
 - Data cleaning and transformation: I standardised identifiable inconsistencies while retaining and documenting ambiguous values where correction could not be justified.
-- Relational data integration: I linked patient and lesion-level datasets through patient_id and created reusable analytical views.
-- Advanced SQL querying: I used joins, aggregate functions, conditional aggregation,  window functions, CASE expressions, filtered aggregates and CROSS JOIN LATERAL to reshape and analyse the data.
+- Relational data integration: I linked patient and lesion-level datasets through `patient_id` and created reusable analytical views.
+- Advanced SQL querying: I used joins, aggregate functions, conditional aggregation,  window functions, `CASE` expressions, filtered aggregates and `CROSS JOIN LATERAL` to reshape and analyse the data.
 - View creation and diagnostic classification: I developed unified and classified analytical views to support progressively deeper analysis.
 
 2. Analytical Skills
