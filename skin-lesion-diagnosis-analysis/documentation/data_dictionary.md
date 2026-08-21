@@ -8,12 +8,12 @@
 | `patient_id` (PK) | Identifier (`character varying 255`) | Unique identifier for each patient | Unique patient value | Primary linkage field used to connect patient and lesion data |
 | `smoke` | Boolean | Whether the patient smokes | `true` / `false` | Lifestyle characteristic |
 | `drink` | Boolean | Whether the patient drinks alcohol | `true` / `false` | Lifestyle characteristic |
-| `background_father` | Categorical (`character varying 255`) | Patient's paternal background | Country labels | Referred to as paternal background in this analysis because the recorded values include country/national-background labels and do not consistently represent ethnicity. During cleaning, `BRASIL` was standardised to `BRAZIL`; `UNK` was standardised to `UNKNOWN`. |
-| `background_mother` | Categorical (`character varying 255`) | Patient's maternal background | Country labels | Referred to as maternal background in this analysis because the recorded values include country/national-background labels and do not consistently represent ethnicity. `UNK` was standardised to `UNKNOWN` during cleaning. |
+| `background_father` | Categorical (`character varying 255`) | Patient's paternal background | Country labels | Referred to as paternal background in this analysis because the recorded values include country/national background labels and do not consistently represent ethnicity. During cleaning, `BRASIL` was standardised to `BRAZIL`; `UNK` was standardised to `UNKNOWN`. |
+| `background_mother` | Categorical (`character varying 255`) | Patient's maternal background | Country labels | Referred to as maternal background in this analysis because the recorded values include country/national background labels and do not consistently represent ethnicity. `UNK` was standardised to `UNKNOWN` during cleaning. |
 | `age` | Numerical (`integer`) | Age of patient | Years | Observed range: 6–94 years; used to derive age groups for analysis |
 | `pesticide` | Boolean | Exposure to pesticides | `true` / `false` | Environmental exposure characteristic |
 | `gender` | Categorical (`character varying 10`) | Gender of patient | `MALE` / `FEMALE` | Used in demographic analysis |
-| `skin_cancer_history` | Boolean | Previous skin cancer diagnosis | `true` / `false` | Patient clinical-history characteristic |
+| `skin_cancer_history` | Boolean | Previous skin cancer diagnosis | `true` / `false` | Patient clinical history characteristic |
 | `cancer_history` | Boolean | Family history of cancer | `true` / `false` | Source brief defines this as family history, not previous personal cancer diagnosis |
 | `has_piped_water` | Boolean | Access to piped water | `true` / `false` | Household/environmental characteristic |
 | `has_sewage_system` | Boolean | Access to sewage system | `true` / `false` | Household/environmental characteristic |
@@ -33,9 +33,10 @@
 | `hurt` | Boolean | Whether the lesion causes pain | `true` / `false` | Clinical feature |
 | `changed` | Boolean | Whether the lesion changed in colour/size | `true` / `false` | Clinical feature |
 | `bleed` | Boolean | Whether the lesion bleeds | `true` / `false` | Clinical feature |
-| `elevation` | Boolean | Whether the lesion is raised | `true` / `false` | Clinical/morphological feature |
+| `elevation` | Boolean | Whether the lesion is raised | `true` / `false` | Clinical feature |
 | `img_id` | Identifier (`character varying 255`) | Associated lesion image filename | Image identifier / filename | Treated primarily as an identifier rather than an analytical variable |
-| `biopsed` | Boolean | Whether the lesion was biopsy-confirmed | `true` / `false` | Clinical-management characteristic |
+| `biopsed` | Boolean | Whether the lesion was biopsy-confirmed | `true` / `false` | Clinical management characteristic |
+
 
 ## 2. Diagnostic Code, Full Name and Classification
 The source dataset records lesion diagnoses using abbreviated diagnostic codes. The project brief did not provide the corresponding full clinical names or broader classifications; these were therefore documented during the analytical stage using established dermatological terminology to support interpretability and category-level analysis. The original diagnostic codes remained unchanged in the data.
@@ -47,6 +48,7 @@ The source dataset records lesion diagnoses using abbreviated diagnostic codes. 
 | `NEV` | Melanocytic Naevus | Benign |
 | `SCC` | Squamous Cell Carcinoma | Malignant |
 | `SEK` | Seborrhoeic Keratosis | Benign |
+
 
 ## 3. Derived Analytical Objects
 The following tables, views, and derived fields were created during data preparation and analysis. They were not part of the original source tables but were developed to support data cleaning, dataset linkage, exploratory analysis, and lesion category analysis.
