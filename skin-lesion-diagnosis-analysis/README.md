@@ -23,7 +23,7 @@ Analytical dataset: The resulting dataset contains 1,088 linked records across s
 
 2. Independent exploratory analysis:  Patient and lesion tables were initially analysed separately to establish their underlying profiles. Patient analysis covered demographics, clinical history, lifestyle habits and environmental characteristics, while lesion analysis examined diagnoses, anatomical locations, clinical features, measurements and biopsy status.
 
-3. Dataset linkage and relationship analysis: The cleaned tables were linked through the common patient_id to create a unified analytical view. This enabled analysis of how patient and lesion characteristics varied across individual lesion diagnoses.
+3. Dataset linkage and relationship analysis: The cleaned tables were linked through the common `patient_id` to create a unified analytical view. This enabled analysis of how patient and lesion characteristics varied across individual lesion diagnoses.
 
 4. Diagnostic classification:  The six individual lesion diagnoses were grouped into three broader categories — benign, pre-cancerous and malignant — to support analysis aligned with the project's central interest in patterns associated with malignant versus benign lesions.
 
@@ -56,9 +56,9 @@ The analysis suggests that the broader lesion categories are characterised by co
 
 ## Data Quality & Limitations
 Several data quality issues were identified during profiling. Categorical inconsistencies that could be resolved confidently were standardised, while ambiguous values were retained and documented rather than altered without supporting evidence. In particular, `diameter_1` and `diameter_2` contained zero values in 581 records (53.40%), while `fitspatrick` contained 579 observations coded as 0 despite the documented Fitzpatrick scale ranging from 1–6. All records with `fitspatrick` = 0 also contained zero values for both lesion diameter measurements, indicating a systematic data quality issue whose meaning could not be established from the available documentation. These values were therefore remained untouched, and the affected variables were not used in subsequent relationship or lesion category analyses.
-Substantial unknown values were also present in `background_father` and `background_mother`, limiting meaningful analysis of parental background associated with lesions.
-The analysis is exploratory and descriptive. Observed differences across diagnoses and lesion categories represent patterns within this dataset and should not be interpreted as causal relationships, clinical risk estimates or diagnostic criteria. Diagnostic groups were unevenly represented, with particularly few MEL cases (n = 17), requiring caution when interpreting comparisons across diagnoses. 
-The data are also specific to the commissioning organisation, which may limit the generalisability of the findings to wider patient populations. No inferential testing or predictive modelling was undertaken.
+In addition to these measurement and coding issues, substantial unknown values were also present in `background_father` and `background_mother`, limiting meaningful analysis of parental background associated with lesions.
+Beyond these data-related limitations, the analytical design also placed boundaries on interpretation. The analysis was exploratory and descriptive and did not include inferential statistical testing or multivariable adjustment. Observed differences across diagnoses and lesion categories therefore represent patterns within this dataset and should not be interpreted as statistically significant or independent associations, causal relationships, clinical risk estimates or diagnostic criteria. Predictive modelling was also outside the scope of the project.
+Finally, the generalisability of the findings is limited. The data analysed was specific to the commissioning organisation, and the analysis did not establish that they constitute a random or population-representative sample. The findings should therefore be interpreted as patterns within the analysed dataset rather than assumed to represent wider patient populations or other healthcare settings.
 
 
 ## Repository Structure
@@ -99,7 +99,7 @@ I used PostgreSQL to clean, transform, aggregate and analyse patient and lesion 
 - Data profiling and validation: I assessed completeness, duplicates, categorical consistency, value ranges and data type suitability across two related datasets.
 - Data cleaning and transformation: I standardised identifiable inconsistencies while retaining and documenting ambiguous values where correction could not be justified.
 - Relational data integration: I linked patient and lesion-level datasets through patient_id and created reusable analytical views.
-- Advanced SQL querying: I used joins, aggregate functions, conditional aggregation,  window functions, CASE expressions, filtered aggregates and CROSS JOIN LATERAL to reshape and analyse the data.
+- Advanced SQL querying: I used joins, aggregate functions, conditional aggregation,  window functions, `CASE` expressions, filtered aggregates and `CROSS JOIN LATERAL` to reshape and analyse the data.
 - View creation and diagnostic classification: I developed unified and classified analytical views to support progressively deeper analysis.
 
 2. Analytical Skills
