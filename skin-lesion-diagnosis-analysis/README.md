@@ -5,6 +5,7 @@ Using SQL, I linked and analysed patient and skin lesion data to explore how pat
 
 ## Healthcare Problem
 Skin cancer detection is a complex healthcare challenge because both patient characteristics and the manner in which skin lesions present clinically can vary considerably. Recognising clinically relevant lesion characteristics can support the early identification of potentially concerning lesions, which is important because early detection can improve patient outcomes.
+
 The source dataset consisted of two tables: a patient-level table containing demographics, clinical history, lifestyle habits and environmental factors, and a lesion-level table containing diagnoses, anatomical locations and clinical features. Analysing table dataset independently provides only a partial view of the problem. Linking both tables through their common patient identifier enables exploration of how patient and lesion characteristics vary across diagnoses and whether identifiable patterns distinguish malignant, pre-cancerous and benign lesions. Understanding these relationships can provide a foundation for more focused investigation.
 
 ## Project Objective
@@ -12,10 +13,15 @@ To explore linked patient and lesion characteristics, identify patterns across l
 
 ## Dataset Overview
 Source: The dataset was provided by Derm AI Diagnostics and consisted of two related source tables containing patient and lesion information.
+
 Structure: Each table contained 1,088 records. The patient table contained one record per patient, while the lesion table contained one corresponding lesion record per patient.
+
 Patient table (`table1`): Contains demographic information, clinical history, lifestyle habits and environmental characteristics.
+
 Lesion table (`table2`): Contains lesion diagnoses, anatomical locations, clinical features, lesion measurements, biopsy status and associated image identifiers.
+
 Linkage: The tables were linked using the common `patient_id`, creating a unified analytical view containing both patient and lesion information.
+
 Analytical dataset: The resulting dataset contains 1,088 linked records across six lesion diagnoses: `ACK`, `BCC`, `MEL`, `NEV`, `SCC` and `SEK`. For category-level analysis, these diagnoses were subsequently classified as benign, pre-cancerous or malignant.
 
 ## Analytical Approach
@@ -57,6 +63,7 @@ These patterns are descriptive associations within the analysed dataset and iden
 
 ## Analytical Implications
 Linking patient and lesion data provided a more complete analytical view than examining either dataset independently, enabling clinical lesion characteristics to be considered alongside patient demographics and clinical history.
+
 The analysis suggests that the broader lesion categories are characterised by combinations of features rather than any single characteristic in isolation. The pronounced descriptive differences observed in clinical presentation, age distribution and clinical history therefore provide focused areas for subsequent investigation using larger datasets and more rigorous statistical or predictive methods.
 
 ## Data Quality & Limitations
