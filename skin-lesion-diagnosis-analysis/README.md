@@ -25,11 +25,11 @@ Linkage: The tables were linked using the common `patient_id`, creating a unifie
 Analytical dataset: The resulting dataset contains 1,088 linked records across six lesion diagnoses: `ACK`, `BCC`, `MEL`, `NEV`, `SCC` and `SEK`. For category-level analysis, these diagnoses were subsequently classified as benign, pre-cancerous or malignant.
 
 ## Analytical Approach
-1. Data quality assessment and cleaning: The two source tables were inspected for structural and data quality issues, including duplicates, missing values, inconsistent categorical values, unexpected values and questionable numerical observations. Cleaning decisions were applied where the intended correction could be justified, while unresolved data quality issues were retained and documented rather than arbitrarily altered.
+1. Data quality assessment and cleaning:  The two source tables were inspected for structural and data quality issues, including duplicates, missing values, inconsistent categorical values, unexpected values and questionable numerical observations. Cleaning decisions were applied where the intended correction could be justified, while unresolved data quality issues were retained and documented rather than arbitrarily altered.
 
 2. Independent exploratory analysis:  Patient and lesion tables were initially analysed separately to establish their underlying profiles. Patient analysis covered demographics, clinical history, lifestyle habits and environmental characteristics, while lesion analysis examined diagnoses, anatomical locations, clinical features, measurements and biopsy status.
 
-3. Dataset linkage and relationship analysis: The cleaned tables were linked through the common `patient_id` to create a unified analytical view. This enabled analysis of how patient and lesion characteristics varied across individual lesion diagnoses.
+3. Dataset linkage and relationship analysis:  The cleaned tables were linked through the common `patient_id` to create a unified analytical view. This enabled analysis of how patient and lesion characteristics varied across individual lesion diagnoses.
 
 4. Diagnostic classification:  The six individual lesion diagnoses were grouped into three broader categories — benign, pre-cancerous and malignant — to support analysis aligned with the project's central interest in patterns associated with malignant versus benign lesions.
 
