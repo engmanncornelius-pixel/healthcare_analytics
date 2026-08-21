@@ -61,8 +61,11 @@ The analysis suggests that the broader lesion categories are characterised by co
 
 ## Data Quality & Limitations
 Several data quality issues were identified during profiling. Categorical inconsistencies that could be resolved confidently were standardised, while ambiguous values were retained and documented rather than altered without supporting evidence. In particular, `diameter_1` and `diameter_2` contained zero values in 581 records (53.40%), while `fitspatrick` contained 579 observations coded as 0 despite the documented Fitzpatrick scale ranging from 1–6. All records with `fitspatrick` = 0 also contained zero values for both lesion diameter measurements, indicating a systematic data quality issue whose meaning could not be established from the available documentation. These values were therefore remained untouched, and the affected variables were not used in subsequent relationship or lesion category analyses.
+
 In addition to these measurement and coding issues, substantial unknown values were also present in `background_father` and `background_mother`, limiting meaningful analysis of parental background associated with lesions.
+
 Beyond these data-related limitations, the analytical design also placed boundaries on interpretation. The analysis was exploratory and descriptive and did not include inferential statistical testing or multivariable adjustment. Observed differences across diagnoses and lesion categories therefore represent patterns within this dataset and should not be interpreted as statistically significant or independent associations, causal relationships, clinical risk estimates or diagnostic criteria. Predictive modelling was also outside the scope of the project.
+
 Finally, the generalisability of the findings is limited. The data analysed was specific to the commissioning organisation, and the analysis did not establish that they constitute a random or population-representative sample. The findings should therefore be interpreted as patterns within the analysed dataset rather than assumed to represent wider patient populations or other healthcare settings.
 
 
